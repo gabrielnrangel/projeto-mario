@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Bross</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div onclick="fecharForm()" class="mascara-form"></div>
+    <div class="header">
+        <img src="./img/icon.png" alt="Logo do Mario">
+        <a href="index.html">Home</a>
+        <a href="nossos-servicos.html">Nossos Serviços</a>
+        <a onclick="mostrarForm()">Fale Conosco</a>
+    </div>
+    <div class="caixa-mae">
+        <div>
+            <img src="./img/mario.png" alt="Logo Mario e Luigi" class="img-mario-luigi">
+        </div>
+        <div class="caixa-principal">
+
+
+            <div class="caixa-texto-principal">
+                <p>
+                    "Os lendários encanadores Mario e Luigi oferecem uma gama
+                    completa de serviços para resolver qualquer problema de
+                    encanamento. Desde desentupimentos até instalações
+                    complexas, eles dominam todas as nuances do ofício. Com sua
+                    experiência incomparável e ferramentas especializadas, garantem
+                    resultados impecáveis em reparos de vazamentos, substituição
+                    de tubulações e manutenção preventiva. Confie em Mario e Luigi para restaurar o fluxo da água e
+                    trazer tranquilidade para sua casa ou negócio."
+                </p>
+            </div>
+
+            <button onclick="mostrarForm()" class="entre-em-contato">Entre em contato</button>
+        </div>
+
+    </div>
+    <div class="caixa-video">
+        <video src="./img/video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+    </div>
+    <a href="https://www.whatsapp.com/?lang=pt_br" class="link-whatsapp">
+        <img src="./img/Whatsapp.png" alt="Link para o Whatsapp">
+    </a>
+
+    <form class="form-fale-conosco" action="https://formcarry.com/s/zW2Or8D0dip" method="POST"
+        enctype="multipart/form-data">
+        <input name="nome" type="text" placeholder="Seu nome">
+        <input name="telefone" type="tel" placeholder="Seu telefone">
+        <textarea name="descricao"></textarea>
+        <button type="submit">Pedir Orçamento</button>
+    </form>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>

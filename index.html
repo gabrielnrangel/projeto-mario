@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a escala inicial e a largura da tela para dispositivos móveis -->
+    <title>Mario Bross</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS chamado style.css -->
+</head>
+
+<body>
+    <div onclick="fecharForm()" class="mascara-form"></div>
+    <!-- Cria uma div para a máscara do formulário com uma função onclick -->
+    <div class="header"> <!-- Cria uma div para o cabeçalho -->
+        <img src="./img/icon.png" alt="Logo do Mario"> <!-- Insere uma imagem do ícone do Mario -->
+        <a href="index.html">Home</a> <!-- Cria um link para a página inicial -->
+        <a href="nossos-servicos.html">Nossos Serviços</a> <!-- Cria um link para a página "Nossos Serviços" -->
+        <a onclick="mostrarForm()">Fale Conosco</a> <!-- Cria um link para mostrar o formulário de contato -->
+    </div>
+    <div class="caixa-mae"> <!-- Cria uma div principal -->
+        <div class="caixa-principal"> <!-- Cria uma div para o conteúdo principal -->
+            <img src="./img/logo.png" alt="Logo do Mario" class="logo-mario">
+            <!-- Insere uma imagem do logo do Mario -->
+            <div class="caixa-texto-principal"> <!-- Cria uma div para o texto principal -->
+
+                <h4>
+                    Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!
+                </h4> <!-- Cria um título -->
+                <p>
+                    Você já se encontrou em uma situação de
+                    emergência com encanamento? Vazamentos inesperados, canos entupidos ou torneiras que não param de
+                    pingar?
+                    Não se
+                    preocupe, porque estamos aqui para salvar o dia! Apresentamos a vocês os encanadores mais famosos do
+                    Reino
+                    dos
+                    Cogumelos - Mario e Luigi! <!-- Cria um parágrafo com texto descritivo -->
+                </p>
+            </div>
+            <button onclick="mostrarForm()" class="entre-em-contato">Entre em contato</button>
+            <!-- Cria um botão para mostrar o formulário de contato -->
+        </div>
+        <div>
+            <img src="./img/mario.png" alt="Logo Mario e Luigi" class="img-mario-luigi">
+            <!-- Insere uma imagem do Mario e do Luigi -->
+        </div>
+    </div>
+    <div class="caixa-video"> <!-- Cria uma div para o vídeo -->
+        <video src="./img/video.mp4" autoplay muted loop></video> <!-- Insere um vídeo com autoplay, mudo e looping -->
+        <div class="mascara-video"></div> <!-- Cria uma div para a máscara do vídeo -->
+    </div>
+    <a href="https://www.whatsapp.com/?lang=pt_br" class="link-whatsapp"> <!-- Cria um link para o Whatsapp -->
+        <img src="./img/Whatsapp.png" alt="Link para o Whatsapp"> <!-- Insere uma imagem do ícone do Whatsapp -->
+    </a>
+
+    <form class="form-fale-conosco" action="https://formcarry.com/s/zW2Or8D0dip" method="POST"
+        enctype="multipart/form-data">
+        <!-- Cria um formulário para contato -->
+        <input name="nome" type="text" placeholder="Seu nome"> <!-- Campo para o nome -->
+        <input name="telefone" type="tel" placeholder="Seu telefone"> <!-- Campo para o telefone -->
+        <textarea name="descricao"></textarea> <!-- Campo para a descrição -->
+        <button type="submit">Pedir Orçamento</button> <!-- Botão de envio do formulário -->
+    </form>
+
+</body>
+<script src="scripts.js"></script> <!-- Importa o arquivo de script chamado scripts.js -->
+
+</html>

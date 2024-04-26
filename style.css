@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-mario {
+    height: 200px;
+    /* Altura de imagem em pixel*/
+}
+
+button {
+    /* Botão entre em contato */
+    color: white;
+    /* Cor do texto do botão */
+    background-color: #c51111;
+    /* Cor de fundo do botão */
+    border-radius: 3px;
+    /* Arredondar borda do botão em pixel*/
+    border: none;
+    /* Tirar borda */
+    width: 200px;
+    /* Largura do botão em pixel*/
+    height: 50px;
+    /* Altura do botão em pixel */
+    cursor: pointer;
+    /* Colocar cursor ao passar no botão */
+    text-transform: uppercase;
+    /* Transforma todo texto em MAIUSCULO */
+    font-weight: bold;
+    /* Coloca fonte em negrito */
+    margin-top: 30px;
+
+}
+
+.entre-em-contato:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.img-mario-luigi {
+    height: 500px;
+    /* Altura imagem */
+}
+
+body {
+    height: 100vh;
+}
+
+.caixa-mae {
+    display: flex;
+    /* Layout flexível permite que os elementos responsivos dentro de um 
+    contêiner sejam organizados automaticamente, dependendo do tamanho da tela*/
+    align-items: center;
+    /* Alinha os itens ao centro verticalmente*/
+    justify-content: space-between;
+    /* Justificar os elementos ao centro horizontalmente */
+    padding: 150px;
+    /* Espaçamento interno em px */
+    height: 100vh;
+}
+
+.caixa-principal {
+    width: 40%;
+    /* Largura da caixa principal */
+
+}
+
+.caixa-video {
+    position: fixed;
+    /* Fixa a posição */
+    top: 0;
+    /* Posição */
+    z-index: -1;
+    /* muda a posição do elemento para traz */
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+.mascara-video {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+.caixa-texto-principal {
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.link-whatsapp img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* Distanciamento entre itens */
+    margin: 30px;
+}
+
+.header img {
+    height: 80px;
+}
+
+.header a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none; /* Tira o sublinhado do texto */
+    
+}
+
+.header a:hover {
+    color: #c51111;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+.form-fale-conosco {
+    background-color: white;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    /* Direção dos componentes em coluna */
+    position: fixed;
+    top: 30%;
+    left: -310px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: left 1s ease-in-out;
+}
+
+input {
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    /* Estilo da borda */
+    padding-left: 5px;
+    outline-color: black;
+}
+
+textarea {
+    height: 100px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    /* Estilo da borda */
+    padding-left: 5px;
+    outline-color: black;
+    /* Muda a cor da seleção para preto */
+}
+
+.mascara-form {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    visibility: hidden;
+    transition: visibility 0.5s ease-in-out;
+}
+
+
+
+/* Media query
+max -> Valor menor que (n) px, aplica o css do MEDIA
+MIN -> Valor maior que (n) px, aplica o css do MEDIA
+*/
+@media(max-width: 1100px){
+    .caixa-texto-principal{
+        display: none;       
+    }
+
+    .caixa-mae{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .caixa-principal{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img-mario-luigi{
+        width: 80vw;
+        height: auto;
+    }
+
+    .header{
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header img{
+        display: none;
+    }
+    
+    .header a{
+        font-size: 20px;
+    }
+    
+}
